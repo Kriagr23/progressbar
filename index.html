@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>question-box</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.min.js"></script>
+   
+  </head>
+  <body>
+    <div class="container">
+      <div class="question-box">
+        <h2 style="color: red">Let's Get Started</h2>
+        <p>Answer the following questions:</p>
+        <div class="question">
+          <label for="text-input-1">Enter your name</label>
+          <input type="text" id="text-input-1" />
+        </div>
+        <div class="question">
+          <label for="text-input-2"
+            >Place where driving license was issued</label
+          >
+          <input type="text" id="text-input-2" />
+        </div>
+        <div class="question">
+          <label for="select-1">All issues</label>
+          <select id="select-1">
+            <option value="">Select an issue</option>
+            <option value="option1">Sales</option>
+            <option value="option2">Document Pickup</option>
+            <option value="option2">Document Dispatch</option>
+            <option value="option2">Document Return</option>
+            <option value="option2">Payment</option>
+          </select>
+        </div>
+        <div class="question">
+          <label for="select-2">Issued year of license</label>
+          <select id="select-2">
+            <option value="">Select year</option>
+            <option value="option1">2018</option>
+            <option value="option2">2019</option>
+            <option value="option2">2020</option>
+            <option value="option2">2021</option>
+            <option value="option2">2022</option>
+            <option value="option2">2023</option>
+          </select>
+        </div>
+        <div class="question">
+          <label>Nature of driving license</label><br />
+          <input type="radio" name="radio" id="radio-1" value="option1" />
+          <label for="radio-1">Private</label><br>
+          <input type="radio" name="radio" id="radio-2" value="option2" />
+          <label for="radio-2">Commercial</label>
+        </div>
+        <div class="question">
+          <label>Type of previous driving license</label><br />
+          <input type="radio" name="radio2" id="radio-3" value="option1" />
+          <label for="radio-3">Paper driving license</label><br>
+          <input type="radio" name="radio2" id="radio-4" value="option2" />
+          <label for="radio-4">Smart Driving license</label>
+        </div>
+      </div>
+      <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+    </div>
+        <!-- thank you section  -->
+    <div class="container">
+        
+        <div id="thank-you" class="hidden">
+            <h2>Thank You!</h2>
+            <p>Your form has been successfully submitted.</p>
+        </div>
+       
+    </div>
+  </body>
+</html>
